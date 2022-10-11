@@ -1,0 +1,49 @@
+função inteiro teste(inteiro j, inteiro k):
+    para i de j até k passo 1 faça
+        j <- j + 1;
+        escreva("J:", j);
+        se j == 5 então
+            escreva("J é 5!!");
+        senão
+            escreva("J não é 5!!");
+        fim_se
+    fim_para
+    retorna j;
+fim_função
+
+Inicio
+    inteiro: a, b, j, k;
+    real: c, d;
+    carater: f, g;
+    logico: h, i;
+
+    j <- 3;
+    k <- 7;
+    a <- 5;
+    leia(b);
+    c <- 13.21;
+    leia(d);
+
+    se a == b e a > c então
+        escreva("OPÇÃO 1", "A:", a, "B:", b, "C:", c);
+    senão
+        escreva("OPÇÃO 2", "A:", a, "B:", b, "C:", c);
+    fim_se
+
+    enquanto a < c faça
+        a <- a + 1;
+        escreva("A:", a);
+    fim_enquanto
+
+    escreva("'A' antes da função:", a);
+    a <- teste (j, k);
+    escreva("'A' depois da função:", a);
+Fim
+
+
+
+
+
+
+
+
